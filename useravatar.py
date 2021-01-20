@@ -25,10 +25,10 @@ while run.lower() == "dia":
           pesan = (message.message)
           #print (pesan)
 
-          client.send_message('berlatihbot', pesan)
+          client.send_message('MissZiziBot', pesan)
 
     if seconds == 45:
-      for message in client.iter_messages('berlatihbot', limit=1):
+      for message in client.iter_messages('MissZiziBot', limit=1):
           (utils.get_display_name(message.sender), message.message)
           pesanhasil = (message.message)
           #print (pesanhasil)
@@ -41,6 +41,3 @@ while run.lower() == "dia":
     seconds = (seconds + 1)
     print(seconds)
     time.sleep(1)
-
-
-
