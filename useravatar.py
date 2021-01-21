@@ -34,7 +34,15 @@ while run.lower() == "dia":
           #print (pesanhasil)
           client.send_message('saveBigdatabot', pesanhasil)
     
-    if seconds == 59:
+    if seconds == 70:
+      for message in client.iter_messages('saveBigdatabot', limit=1):
+          (utils.get_display_name(message.sender), message.message)
+          pesanhasil = (message.message)
+          #print (pesanhasil)
+          client.send_message('niddumulu', pesanhasil)
+    
+
+    if seconds == 80:
         
        run = "diaa"
     os.system('clear')
